@@ -4,7 +4,7 @@
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
-[Demo site](https://haiyankong.github.io/hugo-sewing-demo/)
+[Demo site](https://hugo-sewing.vercel.app/)
 
 </div>
 
