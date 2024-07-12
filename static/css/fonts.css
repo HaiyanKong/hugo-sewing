@@ -1,11 +1,14 @@
 body {
-	font-family: Helvetica, 'Microsoft YaHei', sans-serif;
-	font-weight: 400;
+  font-family: Optima, Candara, Calibri, "Droid Sans", Arial, sans-serif;
+  font-weight: 400;
 }
 
-/*-apple-system, Avenir Next, */
-
 code {
-  font-family: 'Menlo', 'Monaco', 'Courier New',  'Courier', monospace;
+  font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
+  /* font-size: 85%; */
+}
+
+h1, h2, h3 {
+  font-family: Palatino, Book Antiqua, serif;
 }
