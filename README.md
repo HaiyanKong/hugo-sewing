@@ -111,7 +111,7 @@ cd ..
 > To update the submodule, run the following codes at the root directory of your hugo project:
 >
 > ```
-> cd themes/hugo-ht
+> cd themes/hugo-sewing
 > git checkout main && git pull
 > cd ..
 > git add hugo-ht
