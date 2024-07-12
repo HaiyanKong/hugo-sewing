@@ -160,19 +160,7 @@ Suprise!
 
 ### 2 showing
 
-- 2.1 markdown
-
 <gallery>![name1](/blog/hugo-sewing1.jpg)![name2](/blog/hugo-sewing2.jpg)![name3](/blog/hugo-sewing3.jpg)</gallery>
-
-- 2.2 link
-
-<gallery>
-    <img src="https://haiyankong.github.io/hugo-sewing-demo/info/profile.png">
-	<img src="https://haiyankong.github.io/hugo-sewing-demo/info/profile.png">
-	<img src="https://haiyankong.github.io/hugo-sewing-demo/info/profile.png">
-</gallery>
-
-
 
 ## PDF/PPT
 
