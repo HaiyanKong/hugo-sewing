@@ -96,8 +96,6 @@ Suprise!
 {{< align center "center" >}}
 {{< align right "right" >}}
 
-
-
 ## Blockquote
 
 - 1 usage
@@ -130,22 +128,6 @@ Suprise!
 - 2 showing
 
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
-
-
-## Timeline
-
-- 1 usage
-
-```
-{< timeline date="2023/12/31" description="descriptiondescri ptiondescriptiondescrip tiondescriptio n descriptiondescription descriptiondescription" >}
-
-// please use double {{ }}
-```
-
-- 2 showing
-
-{{< timeline date="2024/05/19" description="descriptiondescri ptiondescriptiondescrip tiondescriptio n descriptiondescription descriptiondescription" >}}
-{{< timeline date="2023/12/31" description="descriptio ndescri ptiondesc ription descrip" >}}
 
 ## Image Carousel
 

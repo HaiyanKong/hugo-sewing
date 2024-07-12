@@ -14,6 +14,11 @@ people:
     email: example@example.com
     links: 
       -
+        name: Email
+        url: "mailto:example@example.com"
+        icon: "fa-solid fa-envelope fa-2xl"
+        color: "color: #32012F"
+      -
         name: GoogleScholar
         url: "https://scholar.google.com"
         icon: "fa-brands fa-google-scholar fa-2xl"
@@ -134,12 +139,3 @@ project:
         name: Data
         url: "https://github.com"
 ---
-
-
-
-### News
-
-{{< timeline date="2024/05/25" description="A test news. Your can also add [link](https://github.com) here. Lorem ipsum dolor sit amet, consectetur adipiscing elit vehicula libero sed ultricies elementum." >}}
-{{< timeline date="2024/05/15" description="Hugo-Sewing Theme was created! A test news. Your can also add [link](https://github.com) here. Lorem ipsum dolor sit amet, consectetur adipiscing elit vehicula libero sed ultricies elementum." >}}
-
-<br>
