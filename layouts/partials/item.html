@@ -35,9 +35,9 @@
                 {{ if .links }}
                     <div>
                         {{- range .links -}}
-                            <a href="{{ .url }}" class="btn btn-sm btn-outline-dark z-depth-0" role="button" target="_blank">
+                            <a href="{{ .url }}" class="btn btn-sm btn-outline-dark z-depth-0" role="button" target="_blank" style="display: inline-block; margin-bottom: 5px;margin-right: 5px;">
                                 {{- .name -}}
-                            </a>&nbsp;
+                            </a>                      
                         {{- end -}}    
                     </div>
                 {{ end }}
