@@ -38,13 +38,9 @@ disableKinds = ["GitInfo"]
     url = "/blog/"
     weight = 7
 [[menu.main]]
-    name = "Gallery"
-    url = "/gallery/"
-    weight = 8
-[[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 9
+    weight = 8
 
 [markup.goldmark.renderer]
 unsafe= true

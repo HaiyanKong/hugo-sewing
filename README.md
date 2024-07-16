@@ -40,18 +40,9 @@ Hugo-Sewing is heavily based on [Hugo-Xmin](https://github.com/yihui/hugo-xmin),
 
 This amalgamation of influences led to the name "Hugo-Sewing," symbolizing the process of intricately stitching together these diverse elements to create a cohesive theme.
 
-## Features
-
-- Includes various shortcodes to meet diverse needs, more detais can see this [Blog](https://haiyankong.github.io/hugo-sewing-demo/blog/2024/05/hugo-sewing-shortcodes/).
-- Mobile-friendly and widescreen-friendly designs.
-- Supports the integration of the [Giscus](https://giscus.app/) comment system, powered by [GitHub Discussions](https://docs.github.com/en/discussions).
-- Academic style: with publication, project, and people Page.
-- Utilizes the [Memos](https://github.com/usememos/memos) system for the "Memos" page, allowing to post personal moments, group galleries, and news.
-- "Contact" page features the comment system and enables easy addition of map images.
-
 ## Installation
 
-This theme requires Hugo Extended >= 0.111.3.
+This theme requires Hugo Extended >= 0.128.0.
 
 > Note: If you encounter a "443: Timed out" error when using either method, it's likely due to internet connectivity issues. In that case, you can download the repository and place the `hugo-sewing` folder inside the `themes` directory. Then, simply copy the files from `hugo-sewing/exampleSite` to the root folder and run `hugo server -D`.
 
@@ -127,71 +118,3 @@ cd ..
 - [How to Build a Website Using Hugo without Programming Skills](https://hongtaoh.com/en/2020/06/05/get-started-with-hugo/)
 - [Create and host a blog with Hugo and GitHub Pages in less than 30 minutes](https://www.mytechramblings.com/posts/create-a-website-with-hugo-and-gh/)
 - [Blogging With Hugo](https://digitaldrummerj.me/series/blogging-with-hugo/)
-
-
-## Folder Structure
-
-```
-.
-│  .gitignore
-│  LICENSE
-│  README.md
-│  theme.toml
-│  
-├─archetypes
-│  └─default.md
-│      
-├─assets
-│      
-├─exampleSite
-│  │  config.toml
-│  │  
-│  ├─content
-│  │  │  contact.md
-│  │  │  cv.md
-│  │  │  memos.md
-│  │  │  publication.md
-│  │  │  _index.md
-│  │  │  
-│  │  ├─archive
-│  │  │      
-│  │  ├─blog
-│  │  │      
-│  │  ├─people
-│  │  │      
-│  │  └─project
-│  │          
-│  └─static
-│      ├─blog
-│      │      
-│      ├─contact
-│      │      
-│      ├─info
-│      │      
-│      ├─people
-│      │      
-│      ├─project
-│      │      
-│      └─publication
-│              
-├─i18n
-│      en.yaml
-│      zh.yaml
-│      
-├─layouts
-│  │  404.html
-│  │  index.html
-│  │  
-│  ├─partials
-│  │      
-│  ├─shortcodes
-│  │      
-│  └─_default
-│          
-└─static
-    ├─css
-    │      fonts.css
-    │      style.css
-    │      
-    └─readme
-```
