@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+    <div class="title">{{ .Title }}</div>
+
+
+    <div class="single-date">{{.Params.author}}</div><br>
+
+    {{ if (gt .Params.date 0) }}
+    <div class="single-date">[ {{ .Date.Format (i18n "format_date_single") }} ]</div>
+    <br>
+    {{ end }}
+
+    <p class="single-terms">
+        {{ range $i := (slice "categories" "tags") }}
+        {{ with ($.Param $i) }}
+        {{ $i | title }}: {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a> {{ end }}
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ if .Site.Params.toc | default false }}
+        {{ partial "toc" . }}
+    {{ end }}
+    
+    <hr class="border-dark opacity-70"/>
+    {{ .Content }}
+    
+    <br>
+    <hr class="border-dark opacity-70"/>
+    <br>
+    {{ partial "comment.html" . }}
+
+{{ partial "footer.html" . }}

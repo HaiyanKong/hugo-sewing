@@ -1,0 +1,67 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'   # will show in the Browser Tab
+theme = 'hugo-sewing'
+DefaultContentLanguage = "en"   # Theme's display language, supports: en, zh
+footnotereturnlinkcontents = "↩"
+pygmentsuseclasses = true 
+staticDir = ["static"]
+#enableGitInfo = true
+disableKinds = ["GitInfo"]
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Feature"
+    url = "/feature/"
+    weight = 2
+[[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 3
+[[menu.main]]
+    name = "Project"
+    url = "/project/"
+    weight = 4
+[[menu.main]]
+    name = "Publication"
+    url = "/publication/"
+    weight = 5
+[[menu.main]]
+    name = "People"
+    url = "/people/"
+    weight = 6
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 7
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 8
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[frontmatter]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[params]
+    authorName = "Author Name"   # will show in the copyright
+    enableUpdated = false   # whether to display updating date information
+    enableimgloop = true
+    toc = true   # whether to display table of contents in blog
+
+    [permalinks]
+        blog = "/blog/:year/:month/:slug/"
+
+    [params.Theme]
+        url = "https://github.com/HaiyanKong/hugo-sewing"
+        name = "Hugo-Sewing"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false

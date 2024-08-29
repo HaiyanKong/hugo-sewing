@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+    <div class="title">{{ .Title }}</div>
+<!-- Project -->
+    {{ if .Params.project }}
+        {{ range .Params.project}}
+            {{ partial "item.html" . }}
+        {{ end }}
+        {{ .Content }}
+    {{ end }}
+<!-- People information -->
+    {{ if .Params.people }}
+        {{ range .Params.people}}
+            {{ partial "people.html" . }}
+        {{ end }}
+        <hr class="border-dark opacity-70"/>
+        {{ .Content }}
+    {{ end }}
+{{ partial "footer.html" . }}

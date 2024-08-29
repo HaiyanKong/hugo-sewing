@@ -1,0 +1,16 @@
+- id: toc
+  translation: '本文目录'
+- id: powered_by
+  translation: '本站主题 '
+- id: last_updated 
+  translation: '更新于 '
+- id: format_date_footer
+  translation: '2006/01/02'
+- id: format_date_single
+  translation: '2006-01-02'
+- id: 404_title
+  translation: "找不到网页"
+- id: 404_error
+  translation: "404 错误"
+- id: 404_description
+  translation: "您请求的页面似乎不存在。"

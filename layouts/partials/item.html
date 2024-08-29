@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="col">
+        <div class="row">
+            {{ if .bigtitle }}
+                <h4>{{ .bigtitle }}</h4>
+            {{ end }}
+            {{ if .image }}
+            <div class="col-sm-3 order-sm-2 mb-3">
+                <img width="200px" src="{{ .image }}">
+            </div>
+            <div class="col-sm-9 mb-2 align-self-start">
+                {{ if .title }}
+                    <b>{{ .title }}</b>
+                {{ end }}
+                {{ if .authors }}
+                    <div>
+                        {{ range $author_index, $author_val := .authors }}
+                        {{ if $author_val.me }}
+                        <b><u>
+                        {{ end }}
+                            <span itemprop="author">{{- $author_val.name -}}</span>
+                            {{- /* Add comma if not last author */ -}}
+                            {{- if le $author_index (len .) -}},{{- end -}}
+                        {{ if $author_val.me }}
+                        </u></b>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ if .journal }}<i>{{ .journal }}</i>{{ end }}
+                {{ if and .journal .date }},{{ end }}    
+                {{ if .date }}{{ .date }}{{ end }}
+                {{ if .description }}<div>{{ .description }}</div>{{ end }}
+                {{ if .links }}
+                    <div>
+                        {{- range .links -}}
+                            <a href="{{ .url }}" class="btn btn-sm btn-outline-dark z-depth-0" role="button" target="_blank" style="display: inline-block; margin-bottom: 5px;margin-right: 5px;">
+                                {{- .name -}}
+                            </a>                      
+                        {{- end -}}    
+                    </div>
+                {{ end }}
+            </div>
+            {{ else }}
+            <div class="col-sm-12 mb-2 align-self-start">
+                {{ if .title }}
+                    <b>{{ .title }}</b>
+                {{ end }}
+                {{ if .authors }}
+                    <div>
+                        {{ range $author_index, $author_val := .authors }}
+                        {{ if $author_val.me }}
+                        <b><u>
+                        {{ end }}
+                            <span itemprop="author">{{- $author_val.name -}}</span>
+                            {{- /* Add comma if not last author */ -}}
+                            {{- if le $author_index (len .) -}},{{- end -}}
+                        {{ if $author_val.me }}
+                        </u></b>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ if .journal }}<i>{{ .journal }}</i>{{ end }}
+                {{ if and .journal .date }},{{ end }}    
+                {{ if .date }}{{ .date }}{{ end }}
+                {{ if .description }}<div>{{ .description }}</div>{{ end }}
+                {{ if .links }}
+                    <div>
+                        {{- range .links -}}
+                            <a href="{{ .url }}" class="btn btn-sm btn-outline-dark z-depth-0" role="button" target="_blank" style="display: inline-block; margin-bottom: 5px;margin-right: 5px;">
+                                {{- .name -}}
+                            </a>                      
+                        {{- end -}}    
+                    </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<hr class="border-dark opacity-70"/>

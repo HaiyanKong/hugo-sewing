@@ -1,0 +1,14 @@
+- id: toc
+  translation: Table of Contents
+- id: powered_by
+  translation: Powered by
+- id: format_date_footer
+  translation: '2 January 2006'
+- id: format_date_single
+  translation: '2 January 2006'
+- id: 404_title
+  translation: "Page Not Found"
+- id: 404_error
+  translation: "Error 404"
+- id: 404_description
+  translation: "It seems that the page you've requested does not exist."

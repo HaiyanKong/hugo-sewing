@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+    <div class="title">{{ .Title }}</div>
+    {{ .Content }}
+    {{ if .Params.comment }}
+        {{ partial "comment.html" . }}
+    {{ end }}
+{{ partial "footer.html" . }}

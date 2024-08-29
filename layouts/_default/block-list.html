@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+    <div class="title">{{ .Title }}</div>
+<!-- Publication -->
+    {{ if .Params.publication }}
+        {{ range .Params.publication }}
+            {{ partial "item.html" . }}
+        {{ end }}
+        {{ .Content }}
+    {{ end }}
+<!-- Project -->
+    {{ if .Params.project }}
+        {{ $sortedPages := sort .Pages "Params.order" "asc" }}
+        {{ range $sortedPages }}
+            {{ if eq .Params.draft false }}
+                <h4><a class="itemindex" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h4>
+                {{ range .Params.project}}
+                    {{ partial "item.html" . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+<!-- People information -->
+    {{ if .Params.people }}
+    {{ $sortedPages := sort .Pages "Params.order" "asc" }}
+    {{ range $sortedPages }}
+        {{ if eq .Params.draft false }}
+            <h4><a class="itemindex" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h4>
+            {{ range .Params.people }}
+                {{ partial "people.html" . }}
+            {{ end }}
+            <hr class="border-dark opacity-70"/>
+        {{ end }}
+    {{ end }}
+    {{ end }}
+{{ partial "footer.html" . }}

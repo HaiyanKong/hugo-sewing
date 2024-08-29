@@ -1,0 +1,26 @@
+{{ if .name }}<h2>{{ .name}}</h2>{{end}}
+{{ if .subname }}<h6>{{ .subname}}</h6>{{end}}
+<div class="row">
+    <div class="col">
+        {{ if .image }}
+            <div class="float-end mx-1 my-1">
+                <img width="200px" alt="Profile" src="{{ .image }}">
+            </div>
+        {{end}}
+        {{ if .description }}<p>{{ $.description | markdownify }}</p>{{end}}
+        {{ if .email }}
+            <p><a href="mailto:{{ .email}}" role="button" target="_blank">
+                {{ .email}}
+            </a></p>
+        {{end}}
+        {{ if .links }}
+            <div>
+                {{- range .links -}}
+                    <a href="{{ .url }}"  role="button" target="_blank" style="display: inline-block; margin-bottom: 8px;margin-right: 5px;">
+                        <i class="{{ .icon }}" style="{{.color}}"></i>
+                    </a>
+                {{- end -}}    
+            </div>
+        {{end}}
+    </div> 
+</div> 

@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+    <!-- Title -->
+    {{ if .Params.presenttitle }}
+        <div class="title">{{ .Title }}</div>
+    {{ end }}
+    <!-- People information -->
+    {{ range .Params.people }}
+        {{ partial "people.html" . }}
+    {{ end }}
+    <br>
+    <!-- Content -->
+    <div class="row">
+        <div class="col">
+            {{ .Content }}
+        </div>
+    </div>
+    <!-- Publication -->
+    <h2>{{ .Params.publicationtitle}}</h2>
+    {{ range .Params.publication }}
+        {{ partial "item.html" . }}
+    {{ end }}
+    <br>
+    <!-- Project -->
+    <h2>{{ .Params.projecttitle}}</h2>
+    {{ range .Params.project}}
+        {{ partial "item.html" . }}
+    {{ end }}
+    <br>
+{{ partial "footer.html" . }}

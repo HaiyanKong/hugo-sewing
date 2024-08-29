@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+    <div class="title">{{ .Title }}</div>
+    {{ .Content }}
+    <ul class="posts">
+      {{ $pages := .Pages }}
+      {{ range (where $pages "Section" "!=" "") }}
+      <li class="index">
+        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        <div class="post-date">{{ .Date.Format "2006-01-02" }}</div>
+      </li>
+      {{ end }}
+    </ul>
+{{ partial "footer.html" . }}
