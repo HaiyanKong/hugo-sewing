@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
     <div class="title">{{ .Title }}</div>
-    {{ .Content }}
-    {{ if .Params.comment }}
-        {{ partial "comment.html" . }}
+    {{ if .Params.toc | default false }}
+        {{ partial "toc" . }}
     {{ end }}
+    {{ .Content }}
 {{ partial "footer.html" . }}

@@ -3,6 +3,7 @@ title: "Hugo-Sewing Introduction"
 date: 2024-05-29
 author: Haiyan Kong
 slug: hugo-sewing-introduction
+toc: true
 draft: false
 categories:
   - Hugo-Sewing

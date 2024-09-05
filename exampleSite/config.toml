@@ -52,7 +52,6 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
     authorName = "Author Name"   # will show in the copyright
     enableUpdated = false   # whether to display updating date information
     enableimgloop = true
-    toc = true   # whether to display table of contents in blog
 
     [permalinks]
         blog = "/blog/:year/:month/:slug/"
