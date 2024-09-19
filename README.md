@@ -103,3 +103,8 @@ cd ..
 > ```
 >
 > The above codes came from [paularmstrong](https://github.com/tj/git-extras/pull/80#issuecomment-3992323).
+
+## Todo
+
+- [ ] Optimize the styles by converting 'Publication,' 'People,' and 'Project' into shortcodes for easier addition and modification anywhere.
+	- [ ] Based on the [NeoDB](https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E6%89%8B%E5%8A%A8%E8%BE%93%E5%85%A5neodb%E6%9D%A1%E7%9B%AE) style, add tags for 'Publication'.
